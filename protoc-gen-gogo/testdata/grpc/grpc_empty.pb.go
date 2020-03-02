@@ -6,9 +6,10 @@ package testing
 import (
 	context "context"
 	fmt "fmt"
-	proto "github.com/gogo/protobuf/proto"
-	grpc "google.golang.org/grpc"
 	math "math"
+
+	proto "github.com/bamzi/protobuf/proto"
+	grpc "google.golang.org/grpc"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

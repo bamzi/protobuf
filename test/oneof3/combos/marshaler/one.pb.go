@@ -8,15 +8,16 @@ import (
 	compress_gzip "compress/gzip"
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
-	proto "github.com/gogo/protobuf/proto"
-	github_com_gogo_protobuf_protoc_gen_gogo_descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
 	io_ioutil "io/ioutil"
 	math "math"
 	math_bits "math/bits"
 	reflect "reflect"
 	strings "strings"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	github_com_gogo_protobuf_proto "github.com/bamzi/protobuf/proto"
+	proto "github.com/bamzi/protobuf/proto"
+	github_com_gogo_protobuf_protoc_gen_gogo_descriptor "github.com/bamzi/protobuf/protoc-gen-gogo/descriptor"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

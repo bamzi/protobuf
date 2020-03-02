@@ -50,11 +50,11 @@ And a benchmark given it is enabled using one of the following extensions:
 
 Let us look at:
 
-  github.com/gogo/protobuf/test/example/example.proto
+  github.com/bamzi/protobuf/test/example/example.proto
 
 Btw all the output can be seen at:
 
-  github.com/gogo/protobuf/test/example/*
+  github.com/bamzi/protobuf/test/example/*
 
 The following message:
 
@@ -63,7 +63,7 @@ The following message:
   message B {
 	option (gogoproto.description) = true;
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/bamzi/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
   }
 
 given to the size plugin, will generate the following code:
@@ -128,11 +128,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
-	"github.com/gogo/protobuf/vanity"
+	"github.com/bamzi/protobuf/gogoproto"
+	"github.com/bamzi/protobuf/proto"
+	descriptor "github.com/bamzi/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/bamzi/protobuf/protoc-gen-gogo/generator"
+	"github.com/bamzi/protobuf/vanity"
 )
 
 type size struct {
@@ -581,8 +581,8 @@ func (p *size) Generate(file *generator.FileDescriptor) {
 	p.PluginImports = generator.NewPluginImports(p.Generator)
 	p.atleastOne = false
 	p.localName = generator.FileName(file)
-	p.typesPkg = p.NewImport("github.com/gogo/protobuf/types")
-	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
+	p.typesPkg = p.NewImport("github.com/bamzi/protobuf/types")
+	protoPkg := p.NewImport("github.com/bamzi/protobuf/proto")
 	p.bitsPkg = p.NewImport("math/bits")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
 		protoPkg = p.NewImport("github.com/golang/protobuf/proto")

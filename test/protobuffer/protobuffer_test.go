@@ -32,7 +32,7 @@ import (
 	"bytes"
 	"testing"
 
-	proto "github.com/gogo/protobuf/proto"
+	proto "github.com/bamzi/protobuf/proto"
 )
 
 func TestProtoBufferMarshal12(t *testing.T) {

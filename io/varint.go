@@ -32,8 +32,9 @@ import (
 	"bufio"
 	"encoding/binary"
 	"errors"
-	"github.com/gogo/protobuf/proto"
 	"io"
+
+	"github.com/bamzi/protobuf/proto"
 )
 
 var (

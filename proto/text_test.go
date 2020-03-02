@@ -40,11 +40,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/gogo/protobuf/proto"
+	"github.com/bamzi/protobuf/proto"
 
-	proto3pb "github.com/gogo/protobuf/proto/proto3_proto"
-	pb "github.com/gogo/protobuf/proto/test_proto"
-	"github.com/gogo/protobuf/types"
+	proto3pb "github.com/bamzi/protobuf/proto/proto3_proto"
+	pb "github.com/bamzi/protobuf/proto/test_proto"
+	"github.com/bamzi/protobuf/types"
 )
 
 // textMessage implements the methods that allow it to marshal and unmarshal

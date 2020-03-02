@@ -29,7 +29,7 @@
 package codec
 
 import (
-	"github.com/gogo/protobuf/proto"
+	"github.com/bamzi/protobuf/proto"
 )
 
 type Codec interface {

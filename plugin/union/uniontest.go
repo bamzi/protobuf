@@ -29,9 +29,9 @@
 package union
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/plugin/testgen"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/bamzi/protobuf/gogoproto"
+	"github.com/bamzi/protobuf/plugin/testgen"
+	"github.com/bamzi/protobuf/protoc-gen-gogo/generator"
 )
 
 type test struct {

@@ -31,9 +31,9 @@ package vanity
 import (
 	"path/filepath"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/bamzi/protobuf/gogoproto"
+	"github.com/bamzi/protobuf/proto"
+	descriptor "github.com/bamzi/protobuf/protoc-gen-gogo/descriptor"
 )
 
 func NotGoogleProtobufDescriptorProto(file *descriptor.FileDescriptorProto) bool {

@@ -31,12 +31,13 @@ package io_test
 import (
 	"bytes"
 	"encoding/binary"
-	"github.com/gogo/protobuf/io"
-	"github.com/gogo/protobuf/test"
 	goio "io"
 	"math/rand"
 	"testing"
 	"time"
+
+	"github.com/bamzi/protobuf/io"
+	"github.com/bamzi/protobuf/test"
 )
 
 func iotest(writer io.WriteCloser, reader io.ReadCloser) error {

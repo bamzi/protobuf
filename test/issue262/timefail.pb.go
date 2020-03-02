@@ -5,16 +5,17 @@ package timefail
 
 import (
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
-	_ "github.com/gogo/protobuf/types"
-	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
 	io "io"
 	math "math"
 	math_bits "math/bits"
 	reflect "reflect"
 	strings "strings"
 	time "time"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	proto "github.com/bamzi/protobuf/proto"
+	_ "github.com/bamzi/protobuf/types"
+	github_com_gogo_protobuf_types "github.com/bamzi/protobuf/types"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

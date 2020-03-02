@@ -12,13 +12,19 @@ It has these top-level messages:
 */
 package typedeclimport
 
-import proto "github.com/gogo/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/gogo/protobuf/gogoproto"
-import subpkg "github.com/gogo/protobuf/test/typedeclimport/subpkg"
+import (
+	fmt "fmt"
 
-import io "io"
+	proto "github.com/bamzi/protobuf/proto"
+
+	math "math"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+
+	subpkg "github.com/bamzi/protobuf/test/typedeclimport/subpkg"
+
+	io "io"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

@@ -6,11 +6,12 @@ package deterministic
 import (
 	bytes "bytes"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
-	github_com_gogo_protobuf_sortkeys "github.com/gogo/protobuf/sortkeys"
 	math "math"
 	math_bits "math/bits"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	proto "github.com/bamzi/protobuf/proto"
+	github_com_gogo_protobuf_sortkeys "github.com/bamzi/protobuf/sortkeys"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

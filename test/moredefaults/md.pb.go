@@ -6,10 +6,11 @@ package moredefaults
 import (
 	bytes "bytes"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
-	example "github.com/gogo/protobuf/test/example"
 	math "math"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	proto "github.com/bamzi/protobuf/proto"
+	example "github.com/bamzi/protobuf/test/example"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

@@ -5,10 +5,11 @@ package enumprefix
 
 import (
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
-	test "github.com/gogo/protobuf/test"
 	math "math"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	proto "github.com/bamzi/protobuf/proto"
+	test "github.com/bamzi/protobuf/test"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

@@ -6,12 +6,13 @@ package indeximport
 import (
 	bytes "bytes"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
-	index "github.com/gogo/protobuf/test/indeximport-issue72/index"
 	io "io"
 	math "math"
 	math_bits "math/bits"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	proto "github.com/bamzi/protobuf/proto"
+	index "github.com/bamzi/protobuf/test/indeximport-issue72/index"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

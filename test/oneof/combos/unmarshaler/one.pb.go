@@ -8,18 +8,19 @@ import (
 	compress_gzip "compress/gzip"
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
-	proto "github.com/gogo/protobuf/proto"
-	github_com_gogo_protobuf_protoc_gen_gogo_descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	github_com_gogo_protobuf_test_casttype "github.com/gogo/protobuf/test/casttype"
-	github_com_gogo_protobuf_test_custom "github.com/gogo/protobuf/test/custom"
 	io "io"
 	io_ioutil "io/ioutil"
 	math "math"
 	math_bits "math/bits"
 	reflect "reflect"
 	strings "strings"
+
+	_ "github.com/bamzi/protobuf/gogoproto"
+	github_com_gogo_protobuf_proto "github.com/bamzi/protobuf/proto"
+	proto "github.com/bamzi/protobuf/proto"
+	github_com_gogo_protobuf_protoc_gen_gogo_descriptor "github.com/bamzi/protobuf/protoc-gen-gogo/descriptor"
+	github_com_gogo_protobuf_test_casttype "github.com/bamzi/protobuf/test/casttype"
+	github_com_gogo_protobuf_test_custom "github.com/bamzi/protobuf/test/custom"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -519,10 +520,10 @@ type CustomOneof_Stringy struct {
 	Stringy string `protobuf:"bytes,34,opt,name=Stringy,oneof" json:"Stringy,omitempty"`
 }
 type CustomOneof_CustomType struct {
-	CustomType github_com_gogo_protobuf_test_custom.Uint128 `protobuf:"bytes,35,opt,name=CustomType,oneof,customtype=github.com/gogo/protobuf/test/custom.Uint128" json:"CustomType,omitempty"`
+	CustomType github_com_gogo_protobuf_test_custom.Uint128 `protobuf:"bytes,35,opt,name=CustomType,oneof,customtype=github.com/bamzi/protobuf/test/custom.Uint128" json:"CustomType,omitempty"`
 }
 type CustomOneof_CastType struct {
-	CastType github_com_gogo_protobuf_test_casttype.MyUint64Type `protobuf:"varint,36,opt,name=CastType,oneof,casttype=github.com/gogo/protobuf/test/casttype.MyUint64Type" json:"CastType,omitempty"`
+	CastType github_com_gogo_protobuf_test_casttype.MyUint64Type `protobuf:"varint,36,opt,name=CastType,oneof,casttype=github.com/bamzi/protobuf/test/casttype.MyUint64Type" json:"CastType,omitempty"`
 }
 type CustomOneof_MyCustomName struct {
 	MyCustomName int64 `protobuf:"varint,37,opt,name=CustomName,oneof" json:"CustomName,omitempty"`
